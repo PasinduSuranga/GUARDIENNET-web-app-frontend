@@ -28,7 +28,7 @@ function Login() {
     setMessage('');
 
     try {
-      const response = await fetch("https://guardiennet-backend.fly.dev/api/auth/login", {
+      const response = await fetch("https://guardiennet-backend-i-x-qg.fly.dev/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

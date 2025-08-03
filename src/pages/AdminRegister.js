@@ -19,7 +19,7 @@ function AdminRegister() {
     setMessage('');
 
     try {
-      await axios.post('https://guardiennet-backend.fly.dev/api/auth/register-admin', user); // ✅ Changed endpoint
+      await axios.post('https://guardiennet-backend-i-x-qg.fly.dev/api/auth/register-admin', user); // ✅ Changed endpoint
       alert('✅ Admin verification email sent. Please check your inbox.');
 
       setUser({ username: '', email: '', password: '' });
