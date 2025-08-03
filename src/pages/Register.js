@@ -18,7 +18,7 @@ function Register() {
     setMessage(''); // clear previous messages
 
     try {
-      await axios.post('http://localhost:5000/api/auth/register', user);
+      await axios.post('https://guardiennet-backend.fly.dev/api/auth/register', user);
       alert('✅ Verification email sent. Please check your inbox.');
 
       setUser({username: '', email: '', password: ''});

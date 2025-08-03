@@ -29,7 +29,7 @@ function ResetPassword() {
     try {
       setLoading(true);
 
-      const res = await axios.post(`http://localhost:5000/api/auth/renew-password/${token}`, {
+      const res = await axios.post(`https://guardiennet-backend.fly.dev/api/auth/renew-password/${token}`, {
         newPassword: form.newPassword,
         confirmNewPassword: form.confirmNewPassword,
       });

@@ -18,7 +18,7 @@ const EnterEmail = () => {
     try {
       setStatus({ loading: true, message: '', error: false });
 
-      const res = await axios.post('http://localhost:5000/api/auth/forgot-password', { email });
+      const res = await axios.post('https://guardiennet-backend.fly.dev/api/auth/forgot-password', { email });
 
       const successMsg = res.data.message || 'Reset email sent successfully!';
       setStatus({ loading: false, message: successMsg, error: false });

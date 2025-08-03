@@ -28,7 +28,7 @@ function ChangePassword() {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/change-password', {
+      const res = await fetch('https://guardiennet-backend.fly.dev/api/auth/change-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
